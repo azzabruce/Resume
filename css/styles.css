@@ -1,0 +1,327 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    background-color: white;
+    height: auto;
+}
+
+.resume-container{
+    display: grid;
+
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 60px auto 55px;
+    grid-template-areas: 
+        "i m" 
+        "i m" 
+        "f f";
+    grid-gap: 3px;
+    width:70%;
+    height: 100%;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 9px 20px 30px rgba(0, 0, 0, 0.6);
+    
+}
+
+#info{
+    grid-area: i;
+    background-color:#BCD6CD;
+   
+    
+}
+
+#main{
+    grid-area: m;
+    background-color:#BCD6CD;
+    
+   
+    
+}
+
+#footer{
+    grid-area: f;
+    background-color: #343839;
+    
+}
+
+/*Info, image and about section*/
+
+.photo{
+    position: relative;
+    height: 190px;
+    width:190px;
+    margin:56px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 60px;
+
+}
+
+img{
+    position: absolute;
+    height: 95%;
+    margin: 5px; 
+    border-radius: 50%;
+    border: #BCD6CD solid 5px;
+
+}
+
+ .author{
+    
+    position: absolute;
+    font-family: 'Amatic SC', cursive;
+    font-size: 58px;
+    top:80%;
+    left:9.9%;
+    margin-bottom: 20px;
+   
+    
+}
+
+/*Dots styles*/
+
+.dots{
+    
+    position: relative;
+    padding:10px;
+    height: 5px;
+    padding: 30px 0;
+}
+
+.small-dot{
+    position: absolute;
+    border:3px solid;
+    border-radius:50%;
+    text-align: center;
+    left: 55%;
+    margin-top: 10px;
+    background: linear-gradient(red, yellow);
+    
+}
+
+.smaller-dot{
+    position: absolute;
+    border:3px solid black; 
+    border-radius:50%;
+    text-align: center;
+    left: 47%;
+    margin-top: 10px;
+    
+}
+
+.large-dot{
+    position: absolute;
+    border:6px solid black; 
+    border-radius:50%;
+    text-align: center;
+    left: 50%;
+    
+    
+}
+
+/* End Dots styles*/
+
+
+/*About section styles*/
+
+.about{
+    
+    margin: 0 5px;
+
+}
+
+ p{
+    
+    font-size:20px;
+    text-align:center;
+    padding: 10px 10px;
+    
+
+    
+}
+/*End About section styles*/
+
+/*Hobbies and interests section styles*/
+
+.hobbies{
+    margin: 5px;
+    padding-top:30px;
+
+}
+
+.hobbies-list{
+    display:flex;
+    flex-direction: row;
+
+}
+
+li{
+    margin-left: 0;
+    font-size: 18px; 
+    padding-bottom:20px;
+    list-style-type: none;
+    padding-left: 0;
+    
+}
+
+
+.hobbies h3{
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+/*End Hobbies and interests section styles*/
+
+/*Section divider styles*/
+
+.section-divider{
+    margin:auto;
+    height: 3px;
+    width:80%;
+    border-bottom: 3px solid rgba(119, 119, 119,.5);
+    border-radius: 50%;
+}
+/*End Section divider styles*/
+
+
+/*Contact section style*/
+.contact{
+    text-align: center;
+    padding-top:20px;
+}
+
+
+.contact h3{
+    font-size: 40px;
+    margin:0;
+    text-align: center;
+    font-family:'Amatic SC', cursive; 
+    padding-left: 2px;
+}
+
+.contact-list{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left:0;
+  
+}
+.contact-list li{
+    font-size: 19px;
+    padding: 5px;
+}
+
+/*anchor style*/
+a{
+   
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+/*End anchor style*/
+
+/*End Contact section style*/
+
+
+/*Main section general style*/
+.main-section{
+    padding-top:20px;
+    margin-left:25px;  
+}
+
+.main__section-divider{
+    position: absolute;
+    padding-left:20px;
+    height: 2px;
+    width:40%;
+    border-bottom: 3px solid rgba(119, 119, 119,.5);
+    
+}
+/*End Main section general style*/
+
+/*Objective Styles*/
+.objective h3{
+    margin: 5px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;  
+}
+.objective-list{
+    padding: 0 ;
+    margin: 20px 0;
+    text-align:left;
+    
+}
+
+/*End bjective Styles*/
+
+
+/*Skills Styles*/
+.languages, 
+.tools{
+
+    padding: 10px 30px;
+}
+
+.languages__section-list,
+.tools-section__list{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin:0;
+   
+}
+
+/*Skills Styles*/
+.languages__section-list1{
+    margin-left:-14px;
+}
+
+/*End Skills Styles*/
+
+
+/*h3  style*/
+ h3{
+    margin: 5px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px; 
+}
+/*End h3 section style*/
+
+
+/*h4 style*/
+/*
+ h4{
+    margin: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px; 
+    
+}
+*/
+/*End h4 section style*/
+
+
+/* Footer section Style*/
+#footer p{
+    
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding:0;
+    
+}
+
+/* End Footer section Style*/
